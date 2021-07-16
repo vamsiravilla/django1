@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hi</h1>
+<table border="3">
+
+    <tr>
+        <th>empid</th>
+        <th>empname</th>
+        <th>empphoneno</th>
+        <th>empaddress</th>
+
+</tr>
+     {% for i in data1 %}
+    <tr>
+        <td>{{i.empid}}</td>
+        <td>{{i.empname}}</td>
+        <td>{{i.empmobileno}}</td>
+        <td>{{i.empaddress}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hi</h1>
+<table border="3">
+
+    <tr>
+        <th>HRid</th>
+        <th>HRname</th>
+        <th>HRphoneno</th>
+        <th>HRaddress</th>
+
+</tr>
+     {% for i in data2 %}
+    <tr>
+        <td>{{i.HRid}}</td>
+        <td>{{i.HRname}}</td>
+        <td>{{i.HRmobileno}}</td>
+        <td>{{i.HRaddress}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+
+
+
+</body>
+</html>
